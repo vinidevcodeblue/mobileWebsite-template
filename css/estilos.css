@@ -1,0 +1,766 @@
+/* RESET */
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+address,
+em,
+img,
+strong,
+u,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+article,
+aside, 
+figure,
+figcaption,
+footer,
+header,
+nav,
+section,
+time,
+audio,
+video{
+  border:0;
+  font-size:100%;
+  font:inherit;
+  margin:0;
+  padding:0;
+  vertical-align:baseline;
+}
+html{scroll-behavior:smooth;}
+body{
+  background:#fff;
+  color:#000;
+  font-family: 'Roboto', sans-serif;
+  font-size:13px;
+  line-height:1;
+}
+ol, 
+ul,
+li{list-style:none;}
+strong{font-weight:bold;}
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+  width:100%;
+}
+img{width:100%;}
+a,
+a:hover{
+  color:#000;
+  text-decoration:none;
+  cursor:pointer;
+}
+:focus{outline:0;}
+:hover{transition:.3s ease;}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="url"],
+input[type="password"],
+textarea,
+select{
+  border:0;
+  border-bottom:1px solid #000;
+  color:#000;
+  padding:8px 0;
+  font:13px 'Roboto', sans-serif;
+  background:transparent;
+  width:100%;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="search"]:focus,
+input[type="url"]:focus,
+textarea:focus,
+select:focus{border-color:#900;}
+input[type="submit"],
+input[type="button"],
+button{
+  border:1px solid #000;
+  text-transform:uppercase;
+  padding:10px 30px;
+  color:#000;
+  font:13px 'Roboto', sans-serif;
+  background:transparent;
+}
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="search"]::placeholder,
+input[type="url"]::placeholder{color:#666;}
+
+/* TOPO */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 0;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:9;
+    background:#fff;
+}
+    header section{padding:0 21px;}
+    header p{font-size:15px;}
+    header ul{display:flex;}
+        header li{margin-left:5px;}
+
+/* FOOTER */
+footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    z-index:10;
+    background:#fff;
+    box-shadow:0 1px 1px rgba(0,0,0,0.5);
+    padding:9px 0 34px;
+}
+    footer ul{
+        display:flex;
+        justify-content:space-between;
+        padding:0 11px;
+    }
+        footer.profileFooter img{
+            height:40px;
+            width:auto;
+        }
+
+/* PROFILE */
+.profile{text-align:center;}
+.profile figure{
+    width:128px;
+    margin:76px auto 32px;
+}
+h1{
+    font:36px 'Comfortaa', cursive;
+    margin-bottom:16px;
+}
+    .profile p{
+        text-transform:uppercase;
+        margin-bottom:32px;
+    }
+    .profile a{
+        text-transform:uppercase;
+        display:block;
+        padding:19px 0;
+        border-radius:6px;
+        margin:0 auto;
+        border:2px solid #000;
+    }
+    .profile li{margin:0 16px 16px;}
+    .follow{
+        background:#000;
+        color:#fff;
+    }
+    .follow:hover{color:#fff;}
+
+/* FOTOS */
+.fotos{margin:12px;}
+    .fotos ul{
+        column-count:2;
+        column-gap:9px;
+    }
+        .fotos li{
+            display: inline-block;
+            margin-bottom:9px;
+        }
+    .ver-mais{
+        text-transform:uppercase;
+        display:block;
+        padding:19px 0;
+        border-radius:6px;
+        margin:23px auto 120px;
+        border:2px solid #000;
+        text-align:center;
+    }
+
+/* LOGGED OUT */
+main .loggedOut {
+    display: block;
+    width: 100vw;
+    height: 90vh;
+    background: url(/imagens/loggedout-background.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.loggedOut article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 90vh;
+}
+
+.loggedOut article figure img:first-child {
+    position: absolute;
+    width: 38px;
+}
+
+.loggedOut article h1 {
+    margin: 0 0 0 20px;
+}
+
+.actionsLoggedout {
+    text-align: center;
+    padding: 20px 0 33px;
+}
+.actionsLoggedout button {
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 167px;
+    height: 52px;
+}
+
+.actionsLoggedout button.invertido {
+    background: #000;
+    margin-left: 9px;
+} 
+.actionsLoggedout button.invertido a {
+    color: #FFF;
+}
+
+/* REGISTER*/
+#register main section { padding: 0 16px; }
+#register main section .goBack{
+    position: relative;
+    display: block;
+    width: auto;
+    padding: 16px 0;
+}
+#register main section.btnBack{
+    position: relative;
+    top: 41px;
+    margin-bottom: 41px;
+    display: block;
+}
+#register main section.register{
+    position: relative;
+    display: block;
+    height: 80vh;
+    width: 90vw;
+}
+#register main section.register h1{
+    font:36px 'Comfortaa', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.015em;
+    color: #000000;
+    margin-bottom: 1em;
+}
+
+#register main section.register .inputs {padding: 0;}
+#register main section.register .inputs input[type="email"],
+#register main section.register .inputs input[type="password"] {
+    font-family: 'Roboto', sans-serif;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 17px 0 17px 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#register main section.register .inputs input[type="password"] {
+    margin: 1.05em 0;
+}
+#register main section.register button.invertido {
+    width: 100%;
+    min-height: 52px;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 0;
+}
+#register main section.register button.invertido a {
+    width: 100%;
+    display: flex;
+    position: relative;
+    min-width: 310px;
+    min-height: 45px;
+    align-items: center;
+    justify-content: center;
+}
+
+#register main section.register-username,
+#register main section.btnBack.step2_register  {
+    display: none;
+    padding: 0;
+}
+#register main section.btnBack.step2_register { padding: 0 16px; }
+#register main section.register-username input {
+    font-family: 'Roboto', sans-serif;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 17px 0 17px 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+#register main section.register-username p {
+    margin-top: 32px;
+    font-family: 'Roboto', sans-serif; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+#register main section.register-username p a {
+    text-decoration: underline;
+}
+
+button.invertido, button.invertido a {
+    background: #000;
+    color: #FFF;
+}
+
+#register footer,
+#login footer {
+    padding: 0;
+    box-shadow: none;
+    position: relative;
+}
+
+#register footer img,
+#login footer img {
+    width: 100%;
+    max-width: 375px;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* LOGIN */
+#login main section { padding: 0 16px; }
+#login main section .goBack{
+    position: relative;
+    display: block;
+    width: auto;
+    padding: 16px 0;
+}
+#login main section.btnBack{
+    position: relative;
+    top: 41px;
+    margin-bottom: 41px;
+    display: block;
+}
+
+#login main section .inputs,
+#login main section.login {padding: 0;}
+#login main section.login {height: 80vh;padding: 0 16px;}
+#login main section .inputs input[type="email"],
+#login main section .inputs input[type="password"] {
+    font-family: 'Roboto', sans-serif;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 17px 0 17px 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#login main section .inputs input[type="password"] {margin: 1.05em 0 1.1em }
+
+#login main section button.invertido {
+    width: 100%;
+    min-height: 52px;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 0;
+}
+#login main section button.invertido a {
+    width: 100%;
+    display: flex;
+    position: relative;
+    min-width: 310px;
+    min-height: 45px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* DISCOVER */
+#discover main section.container {
+    position: relative;
+    display: block;
+    padding: 0 1.05em;
+    width: 91vw;
+    margin: 0 auto;
+    margin-top: 66px;
+}
+
+
+#discover main section article p strong {
+    font-family: 'Roboto', sans-serif; 
+    font-style: normal;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+#discover main section.destaque_discover {
+    padding: 0 0;
+    height: 410px;
+    margin: 24px 0 48px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+#discover main section.over {
+    overflow: auto;
+}
+
+#discover main section.over.destaque_discover > figure {
+    min-width: 100%;
+    height: 390px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    touch-action: pan-x;
+    padding: 0 16px 0 0;
+
+}
+#discover main section.over.destaque_discover figure img.destaqueImg {
+    width: 343px;
+    height: 343px;
+}
+#discover main section.over.destaque_discover figure .postBy {
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+#discover main section.over.destaque_discover figure .postBy figure.avatar {
+    display: inherit;
+    width: 28px;
+    height: 28px;
+}
+#discover main section.over.destaque_discover figure .postBy .name h3 {
+    color: #000;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+}
+#discover main section.over.destaque_discover figure .postBy .name p {
+    color: rgb(112, 112, 112);
+    font-family: 'Roboto', sans-serif; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+} 
+#discover main section.all_posts article h3 {
+    font-family: 'Roboto', sans-serif; 
+    font-style: normal;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 24px;
+} 
+#discover main section.all_posts .fotos {margin: 0;}
+
+#discover main section.modal-story .top-bar > img {width: 28px;height: 28px;}
+#discover main section.modal-story {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 812px;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+#discover main section.modal-story .top-bar {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 92%;
+    padding: 48px 16px 0;
+    background: linear-gradient(black, transparent);
+}
+#discover main section.modal-story .top-bar .name-post {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+}
+
+#discover main section.modal-story .top-bar .name-post .name h3 {
+    color: #FFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+}
+#discover main section.modal-story .top-bar .name-post .name p {
+    color: #cecece;
+    font-family: 'Roboto', sans-serif; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+} 
+
+ /* SEARCH */
+#search main,
+#search-results main {
+    padding: 0 16px;
+}
+#search main > section {
+    margin-top: 5em;
+    height: 90vh;
+}
+
+#search main section article section.input_search input,
+#search-results section article section.input_search input {
+    font-family: 'Roboto', sans-serif;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 17px 0 17px 17px;
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search main footer:not(.profileFooter) {
+    padding-bottom: 0;
+    display: none;
+}
+
+ /* SEARCH RESULTS */
+#search-results main > section:first-child {
+    margin-top: 5em;
+}
+#search-results main section.results_search {
+    margin: 0 0 100px;
+}
+
+#search-results main section.results_search h3 {
+    font-family: 'Roboto', sans-serif; 
+    font-style: normal;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 32px 0 24px;
+}
+#search-results main section.results_search ul{
+    column-count:3;
+    column-gap:9px;
+}
+#search-results main section.results_search li{
+        display: inline-block;
+        margin-bottom:9px;
+    }
+
+/* CHATS */
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url(/fonts/SFProText-Regular.woff);
+}
+
+#chat main .conversations {height: 712px;}
+#chat main .conversations h2 {
+    font-family: 'SF Pro Text';
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.408px;
+    color: #000000;
+}
+#chat main .conversations li:first-child {
+    padding-top: 16px;
+    margin-top: 11px;
+    border-top: 1px solid #0000004D;
+}
+#chat main .conversations li {
+    padding: 20px 0;
+    border: 1px solid ;
+    border-color: rgba(0, 0, 0, 0.3);
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+
+#chat main .conversations li a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+#chat main .conversations li img {
+    width: 64px;
+    height: 64px;
+    padding-left: 16px;
+}
+#chat main .conversations li p {
+    padding-right: 16px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+#chat main .conversations li p strong{
+    margin-bottom: -10px;
+    display: block;
+}
+
+#chat main .individual_chat {
+    height: 800px;
+    position: absolute;
+    top: 50px;
+    background: #FFF;
+    left: 100%;
+    width: auto;
+    transition: .3s cubic-bezier(0.55, 0.06, 0.68, 0.19) all;
+}
+#chat main .individual_chat.active {
+    display: block;
+    left: 0;
+    transition: .3s cubic-bezier(0.55, 0.06, 0.68, 0.19) all;
+}
+
+#chat main .individual_chat article {
+    background: #FFFFFF;
+    box-shadow: 0px 0.5px 0px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(27.1828px);
+    margin-bottom: 32px;
+}
+#chat main .topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+    padding-left: 9px;
+    padding-bottom: 11px;
+}
+
+#chat main .topo img {
+    width: auto;
+}
+
+#chat main .topo h2 {
+    font-family: 'SF Pro Text';
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: -0.408px;
+
+    color: #000000;
+}
+
+#chat main .individual_chat .box1,
+#chat main .individual_chat .box2,
+#chat main .individual_chat .box3 {
+    padding:0 16px 24px;
+    display: flex;
+    min-height: 84px;
+} 
+#chat main .individual_chat .box2 {
+    flex-direction: row-reverse;
+}
+
+#chat main .individual_chat .box1 p,
+#chat main .individual_chat .box2 p,
+#chat main .individual_chat .box3 p {
+    padding: 16px;
+    font-family: 'Roboto', sans-serif; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+} 
+
+#chat main .individual_chat .box1 img,
+#chat main .individual_chat .box2 img,
+#chat main .individual_chat .box3 img {
+    width: 28px;
+    height: 28px;
+}
+/*
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Roboto', sans-serif; 
+*/
