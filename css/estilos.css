@@ -1,4 +1,79 @@
-/* RESET */
+/* MORDERN RESET */
+/* Box sizing rules 
+*,*/
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with 
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}*/
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* OLD RESET */
 html,
 body,
 div,
@@ -701,13 +776,13 @@ button.invertido, button.invertido a {
     transition: .3s cubic-bezier(0.55, 0.06, 0.68, 0.19) all;
 }
 
-#chat main .individual_chat article {
+#chat main .individual_chat.active article {
     background: #FFFFFF;
     box-shadow: 0px 0.5px 0px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(27.1828px);
     margin-bottom: 32px;
 }
-#chat main .topo {
+#chat main .individual_chat.active .topo {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -716,11 +791,11 @@ button.invertido, button.invertido a {
     padding-bottom: 11px;
 }
 
-#chat main .topo img {
+#chat main .individual_chat.active .topo img {
     width: auto;
 }
 
-#chat main .topo h2 {
+#chat main .individual_chat.active .topo h2 {
     font-family: 'SF Pro Text';
     font-size: 17px;
     line-height: 22px;
@@ -731,20 +806,20 @@ button.invertido, button.invertido a {
     color: #000000;
 }
 
-#chat main .individual_chat .box1,
-#chat main .individual_chat .box2,
-#chat main .individual_chat .box3 {
+#chat main .individual_chat.active .box1,
+#chat main .individual_chat.active .box2,
+#chat main .individual_chat.active .box3 {
     padding:0 16px 24px;
     display: flex;
     min-height: 84px;
 } 
-#chat main .individual_chat .box2 {
+#chat main .individual_chat.active  .box2 {
     flex-direction: row-reverse;
 }
 
-#chat main .individual_chat .box1 p,
-#chat main .individual_chat .box2 p,
-#chat main .individual_chat .box3 p {
+#chat main .individual_chat.active .box1 p,
+#chat main .individual_chat.active .box2 p,
+#chat main .individual_chat.active .box3 p {
     padding: 16px;
     font-family: 'Roboto', sans-serif; 
     font-style: normal;
@@ -754,9 +829,9 @@ button.invertido, button.invertido a {
     color: #000000;
 } 
 
-#chat main .individual_chat .box1 img,
-#chat main .individual_chat .box2 img,
-#chat main .individual_chat .box3 img {
+#chat main .individual_chat.active .box1 img,
+#chat main .individual_chat.active .box2 img,
+#chat main .individual_chat.active .box3 img {
     width: 28px;
     height: 28px;
 }
