@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'SF Pro Text';
-    src: url(/fonts/SFProText-Regular.woff);
+    src: url(../fonts/SFProText-Regular.woff);
 }
 /* MORDERN RESET */
 /* Box sizing rules 
@@ -287,7 +287,7 @@ main .loggedOut {
     display: block;
     width: 100vw;
     height: 90vh;
-    background: url(/imagens/loggedout-background.jpg) no-repeat;
+    background: url(../imagens/loggedout-background.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     text-align: center;
